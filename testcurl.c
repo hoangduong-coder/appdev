@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <i386-linux-gnu/curl/curl.h>
-#include "comm.h"
 
-void sendpost(char *url, char *post) {
+#define URL "http://www.cc.puv.fi/~e1900281/php/raspsound.php"
+
+int main(void) {
 	CURL *curl;
 	CURLcode res;
 	curl_global_init(CURL_GLOBAL_ALL);
