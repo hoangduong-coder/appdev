@@ -18,13 +18,16 @@ List of contents
 1. Configuration instructions
 	In this section, we should give users information of how to configure
 	the operating system, software environment, libraries, etc. to run this application.
+
 2. Installation instructions
 	In this section we should give users information of how to install this application, 
 	what files not included in this package should be added. What command/operation 
 	should be used to install this application
+
 3. Operating instructions
 	In this section, we should give users information of how to run this application,
 	e.g., what command-line arguments can be given and what do they mean
+
 4. File manifest
 	We should list all the files of the application at here with short descriptions
 	List of files
@@ -38,5 +41,6 @@ List of contents
 	comm.h			contains function declarations and constant definitions of comm.c
 	makefile		contains linking rule, compiling rule, cleaning rule and archiving 
 					rule, which support to run testscreen file
+
 5. Copyright
 	THis application follows GPLv2 copyright.
