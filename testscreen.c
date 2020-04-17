@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include "screen.h"
 #include "comm.h"
+#include "sound.h"
 int main(void) {
 	Position cur = getscreensize();
 	char postdata[100];
@@ -29,7 +30,10 @@ int main(void) {
     clearscreen();
 	printf("Color is set back to default\n");
 	getchar();
-
+	FILE *fp = fopen("test.wav", "r");
+	WAVheader h = readwavhdr(fp);
+	fclose(fp);
+	displaywavhdr(h);
 /*
 	setfgcolor(GREEN);
 	gotoXY(14,35);
