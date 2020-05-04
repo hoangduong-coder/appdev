@@ -2,7 +2,7 @@
 //declarations for processing sound, specifically .wav files.
 //#define SDEBUG
 #define SAMPLERATE 16000
-#define BARS 160
+#define BARS 120
 #define SIZE 500
 typedef struct{
 	char chunkID[4];		//should be always "RIFF"

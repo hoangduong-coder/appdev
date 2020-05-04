@@ -2,6 +2,8 @@
 #include "sound.h"
 #include <math.h>
 #include "screen.h"
+#include "comm.h"
+
 WAVheader readwavhdr(FILE *fp){
 	WAVheader myh;
 	fread(&myh, sizeof(myh), 1, fp);
@@ -28,6 +30,8 @@ void wavdata(WAVheader h, FILE*fp) {
 	//MEAN SQUARE) formula
 	short samples[SIZE];
 	int peak = 0, flag = 0;
+	char postdata[100];
+	double maxdB = 0;
 	for(int i=0; i<BARS; i++) {		//to read 5s wave file, we have 40 data
 		fread(samples, sizeof(samples), 1, fp);
 		double sum=0;
@@ -49,6 +53,10 @@ void wavdata(WAVheader h, FILE*fp) {
 		setfgcolor(WHITE);
 		if(flag==1) flag = 0;
 		}
+	if(dB >= maxdB)
+		maxdB = dB;
+	else
+		maxdB = maxdB;
 	drawbar(i+1, (int)dB/3);
 	gotoXY(1,1);
 	setfgcolor(CYAN);
@@ -59,6 +67,11 @@ void wavdata(WAVheader h, FILE*fp) {
 	gotoXY(1, 100);
 	setfgcolor(YELLOW);
 	printf("Number of peaks: %d\n", peak);
+	gotoXY(2,1);
+	setfgcolor(RED);
+	printf("Maximum decibel value: %lf\n", maxdB);
 #endif
 	}
+	sprintf(postdata, "Peaks=%d&MaxdB=%lf", peak, maxdB);
+	sendpost(URL, postdata);
 }
