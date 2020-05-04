@@ -15,6 +15,8 @@ List of contents
 6. Contact infomation
 7. Credits and acknowledgements
 
+		-------------------------------------------------------------
+
 1. Configuration instructions
 	In this section, we should give users information of how to configure
 	the operating system, software environment, libraries, etc. to run this application.
@@ -41,6 +43,19 @@ List of contents
 	comm.h			contains function declarations and constant definitions of comm.c
 	makefile		contains linking rule, compiling rule, cleaning rule and archiving 
 					rule, which support to run testscreen file
+	sound.c			contains functions which show data and information of an audio file 
+					(.wav) and send them to PHP file
+	sound.h			contains functions declarations and constant definitions of sound.c
+	main.c			contains functions which check if the screen is wide enough to 
+					run the comm.c program
+	puttysize.php	contains functions which receives the information from comm.c and 
+					display them on a .txt file
 
 5. Copyright
 	THis application follows GPLv2 copyright.
+
+6. Contact information
+	Hoang Duong
+	Email: hoangduongphantri@gmail.com
+
+7. Credits and acknowledgements
