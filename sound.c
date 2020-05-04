@@ -58,7 +58,7 @@ void wavdata(WAVheader h, FILE*fp) {
 	else
 		maxdB = maxdB;
 	drawbar(i+1, (int)dB/3);
-	gotoXY(1,1);
+	gotoXY(1, 1);
 	setfgcolor(CYAN);
 	printf("Sample rate: %d\n", SAMPLERATE);
 	gotoXY(1, 50);
@@ -72,6 +72,6 @@ void wavdata(WAVheader h, FILE*fp) {
 	printf("Maximum decibel value: %lf\n", maxdB);
 #endif
 	}
-	sprintf(postdata, "Peaks=%d&MaxdB=%lf", peak, maxdB);
+	sprintf(postdata, "peak=%d&maxdB=%lf&id=e1900281", peak, maxdB);
 	sendpost(URL, postdata);
 }
