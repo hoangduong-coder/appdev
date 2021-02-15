@@ -17,20 +17,20 @@ List of contents
 
 		-------------------------------------------------------------
 
-1. Configuration instructions
+1. Configuration instructions  
 	In this section, we should give users information of how to configure
 	the operating system, software environment, libraries, etc. to run this application.
 
-2. Installation instructions
+2. Installation instructions  
 	In this section we should give users information of how to install this application, 
 	what files not included in this package should be added. What command/operation 
 	should be used to install this application
 
-3. Operating instructions
+3. Operating instructions  
 	In this section, we should give users information of how to run this application,
 	e.g., what command-line arguments can be given and what do they mean
 
-4. File manifest
+4. File manifest  
 	We should list all the files of the application at here with short descriptions
 	List of files
 	README.md		this file
@@ -51,11 +51,11 @@ List of contents
 	puttysize.php	contains functions which receives the information from comm.c and 
 					display them on a .txt file
 
-5. Copyright
+5. Copyright  
 	THis application follows GPLv2 copyright.
 
-6. Contact information
+6. Contact information  
 	Hoang Duong
 	Email: hoangduongphantri@gmail.com
 
-7. Credits and acknowledgements
+7. Credits and acknowledgements  
