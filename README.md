@@ -31,25 +31,25 @@ List of contents
 	e.g., what command-line arguments can be given and what do they mean
 
 4. File manifest  
-	We should list all the files of the application at here with short descriptions
-	List of files
-	README.md		this file
-	screen.c		contains screen manipulation functions
-	screen.h		contains constant definitions and function declarations
-					of screen.c
-	testscreen.c	contains main function, which run all functions in screen.c
-	testcurl.c		contains functions which send information to a php file
-	comm.c			contains functions which post information to a php file
-	comm.h			contains function declarations and constant definitions of comm.c
+	We should list all the files of the application at here with short descriptions  
+	List of files  
+	README.md		this file  
+	screen.c		contains screen manipulation functions  
+	screen.h		contains constant definitions and function declarations  
+					of screen.c  
+	testscreen.c	contains main function, which run all functions in screen.c  
+	testcurl.c		contains functions which send information to a php file  
+	comm.c			contains functions which post information to a php file  
+	comm.h			contains function declarations and constant definitions of comm.c  
 	makefile		contains linking rule, compiling rule, cleaning rule and archiving 
-					rule, which support to run testscreen file
-	sound.c			contains functions which show data and information of an audio file 
-					(.wav) and send them to PHP file
-	sound.h			contains functions declarations and constant definitions of sound.c
-	main.c			contains functions which check if the screen is wide enough to 
-					run the comm.c program
-	puttysize.php	contains functions which receives the information from comm.c and 
-					display them on a .txt file
+					rule, which support to run testscreen file  
+	sound.c			contains functions which show data and information of an audio file   
+					(.wav) and send them to PHP file  
+	sound.h			contains functions declarations and constant definitions of sound.c  
+	main.c			contains functions which check if the screen is wide enough to   
+					run the comm.c program  
+	puttysize.php	contains functions which receives the information from comm.c and   
+					display them on a .txt file  
 
 5. Copyright  
 	THis application follows GPLv2 copyright.
